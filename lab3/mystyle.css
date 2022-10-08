@@ -1,0 +1,43 @@
+.chunghieng {
+    font-style: italic;
+}
+
+.chumaudo {
+   color: red;
+}
+
+.chucangiua {
+   text-align: center;
+}
+
+.chugachchan {
+   text-decoration: underline;
+}
+
+
+
+
+
+li.myli {
+   display: inline-block;
+}
+
+.hello {
+   color: red;
+   text-decoration: underline;
+   font-style: italic;
+   text-align: center;
+}
+
+.Hello {
+   background: red;
+}
+
+p#thu7 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: blue;
+}
+
+h2#thu7 {
+   color: yellow;
+}
