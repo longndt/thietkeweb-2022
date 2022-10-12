@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+li.menu {
+  display: inline-block;
+  border: solid green 5px;
+  padding-right: 8px;
+  margin-right: 6px;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+p {
+  border: 6px solid blue;
+  background-color: cyan;
+  padding: 10px; /* top right bottom left (5px); */
+  padding: 1px 3px 5px 7px; /*top (1px) right (3px) bottom (5px) left (7px) */
+  /* Note: thứ tự các hướng theo chiều kim đồng hồ đi từ 12h */
+  padding: 12px 14px; /* top-bottom (2px)  left-right (4px) */
+}
