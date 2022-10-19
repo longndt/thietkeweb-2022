@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Layout</title>
+   <style>
+      body {
+         margin: 20px auto;
+         width: 95%;
+         height: 600px;
+      }
+
+      aside {
+         width: 25%;
+         height: 600px;
+         float: left;
+         background-color: darkslateblue;
+      }
+
+      section {
+         width: 70%;
+         float: right;
+         background-color: aquamarine;
+         height: 600px;
+      }
+
+
+
+      a {
+         color: white;
+         text-decoration: none;
+         font-size: 120%;
+      }
+
+      a:hover {
+         text-decoration: underline;
+         font-weight: bold;
+         color: chartreuse;
+      }
+
+      ul {
+         list-style: none;
+      }
+
+      section header {
+         text-align: center;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         color: red;
+         font-weight: bold;
+         margin-bottom: 5px;
+         margin-top: 5px;
+         font-size: 150%;
+      }
+
+
+
+      article {
+         padding: 0 10px;
+         text-align: justify;
+         margin-bottom: 5px;
+         color: darkgoldenrod;
+         font-size: 120%;
+         font-family: 'Times New Roman', Times, serif;
+      }
+
+      img {
+         width: 300px;
+         height: 200px;
+         margin-top: 5px;
+      }
+
+      h1 {
+         text-align: center;
+      }
+
+      header>h1>img {
+         border: 2px solid red;
+         width: 500px;
+      }
+
+      footer {
+         background-color: darkkhaki;
+         clear: right;
+         padding-top: 2px;
+         padding-bottom: 2px;
+      }
+
+      aside,
+      section {
+         margin-bottom: 15px;
+      }
+
+      footer>p {
+         font-size: 30px;
+         color: blue;
+         font-weight: bold;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>
+         <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTSAGwmgSJSVk8yKuHAiWUQoKz-OvghSLA7lLcy-A0Zhh-Uu4uVW4IHhID0P8O4tlffw&usqp=CAU"
+            alt="">
+      </h1>
+   </header>
+   <aside>
+      <nav>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">About</a></li>
+         </ul>
+      </nav>
+   </aside>
+
+   <section>
+      <header>
+         Hanoi - Capital of Vietnam
+      </header>
+      <article>
+         Hà Nội là thủ đô, thành phố trực thuộc trung ương và là một đô thị loại đặc biệt của Việt Nam. Hà Nội nằm về
+         phía tây bắc của trung tâm vùng đồng bằng châu thổ sông Hồng, với địa hình bao gồm vùng đồng bằng trung tâm và
+         vùng đồi
+         núi ở phía bắc và phía tây thành phố. Với diện tích 3.359,82 km²,[2] và dân số 8,33 triệu người,[4] Hà Nội là
+         thành phố trực
+         thuộc trung ương có diện tích lớn nhất Việt Nam, đồng thời cũng là thành phố đông dân thứ hai và có mật độ dân
+         số cao thứ hai trong 63 đơn vị hành chính cấp tỉnh của Việt Nam, nhưng phân bố dân số không đồng đều. Hà Nội có
+         30 đơn vị hành chính cấp huyện, gồm 12 quận, 17 huyện và 1 thị xã.
+
+         <center>
+            <img src="https://theplanetd.com/images/Best-Things-to-do-in-Hanoi-Vietnam.jpg">
+         </center>
+
+      </article>
+   </section>
+   <footer>
+      <p>Thiết kế web - GTVT - 2022</p>
+   </footer>
+</body>
+
+</html>

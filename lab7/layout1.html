@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Layout</title>
+   <style>
+      body {
+         margin: 30px auto;
+         width: 90%;
+      }
+
+      div#sidebar {
+         width: 35%;
+         float: left;
+         background-color: darksalmon;
+      }
+
+      div#content {
+         width: 65%;
+         float: right;
+         background-color: aqua;
+      }
+
+      div,
+      section,
+      aside {
+         height: 500px;
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 300%;
+         font-weight: bold;
+      }
+
+      section,
+      aside {
+         height: 400px;
+      }
+
+      aside {
+         width: 20%;
+         background-color: darkseagreen;
+         /* clear: left; */
+         float: left;
+      }
+
+      section {
+         width: 80%;
+         background-color: khaki;
+         /* clear: right; */
+         float: right;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- HTML 4 (Old way) -->
+   <div id="sidebar">Sidebar</div>
+   <div id="content">Content</div>
+
+   <!-- HTML 5 (New way) -->
+   <section>Section</section>
+   <aside>Aside</aside>
+
+</body>
+
+</html>
