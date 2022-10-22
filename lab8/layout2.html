@@ -5,36 +5,31 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Web layout with Bootstrap</title>
-   <!-- CSS only -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <title>Web layout with table</title>
 </head>
 
 <body>
-   <!-- div.container.col-11 -->
-   <div class="container col-11 card bg-light">
-      <div class="row">
-         <div class="col card bg-secondary">nav</div>
-      </div>
-      <div class="row">
-         <div class="col card bg-warning">header</div>
-      </div>
-      <div class="row">
-         <div class="col-8 card bg-danger">section</div>
-         <div class="col-4 card bg-success h-25">aside
-            <div></div>
-            <div></div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-8 card bg-info">article</div>
-      </div>
-      <div class="row">
-         <div class="col card bg-primary">footer</div>
-      </div>
-   </div>
 
+   <!-- table>(tr>th{Nav})+tr>th{Header} -->
+   <table border="1" style="width: 100%">
+      <tr style="height: 80px">
+         <th colspan="2">Nav</th>
+      </tr>
+      <tr style="height: 100px">
+         <th colspan="2">Header</th>
+      </tr>
+      <!-- tr>th{Section}+th[rowspan=2]{Aside} -->
+      <tr>
+         <th style="height: 150px">Section</th>
+         <th rowspan="2" style="height: 300px">Aside</th>
+      </tr>
+      <tr>
+         <th style="height: 150px">Article</th>
+      </tr>
+      <tr>
+         <th colspan="2" style="height: 120px">Footer</th>
+      </tr>
+   </table>
 </body>
 
 </html>
