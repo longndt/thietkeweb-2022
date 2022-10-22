@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <style>
+      fieldset {
+         width: fit-content;
+         background-color: burlywood;
+      }
+
+      legend {
+         font-weight: bold;
+         color: blue;
+         font-family: Georgia, 'Times New Roman', Times, serif
+      }
+
+      label {
+         font-weight: bold;
+         font-style: italic;
+         color: brown;
+      }
+
+      input:focus {
+         background-color: yellow;
+      }
+
+      #login {
+         color: fuchsia;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+   </style>
+</head>
+
+<body>
+   <center>
+      <form method="get" action="">
+         <fieldset>
+            <legend>User Login</legend>
+            <label for="">Username</label><br>
+            <input type="text" required minlength="3" maxlength="10" placeholder="Enter your username" name="username">
+            <br>
+            <label for="">Password</label><br>
+            <input type="password" required name="password"><br><br>
+            <input type="submit" value="Login" id="login">
+         </fieldset>
+      </form>
+   </center>
+
+</body>
+
+</html>

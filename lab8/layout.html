@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web layout with CSS</title>
+   <style>
+      body {
+         margin: 10px auto;
+         /* top-bottom  left-right */
+         width: 90%;
+         text-align: center;
+         font-size: 150%;
+         font-weight: bold;
+         vertical-align: middle;
+         line-height: 120px;
+      }
+
+      nav,
+      header,
+      footer {
+         height: 100px;
+      }
+
+      section,
+      article {
+         height: 150px;
+         float: left;
+      }
+
+      nav {
+         background-color: aqua;
+      }
+
+      header {
+         background-color: yellow;
+      }
+
+      section {
+         background-color: fuchsia;
+         width: 50%;
+      }
+
+      article {
+         background-color: darkkhaki;
+         width: 50%;
+      }
+
+      aside {
+         background-color: green;
+         width: 50%;
+         height: 300px;
+         float: right;
+      }
+
+      footer {
+         background-color: orangered;
+         clear: both;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Emmet: nav+header+(main>section+article+aside)+footer -->
+   <nav>Nav</nav>
+   <header>Header</header>
+   <main>
+      <section>Section</section>
+      <aside>Aside</aside>
+      <article>Article</article>
+   </main>
+   <footer>Footer</footer>
+</body>
+
+</html>
