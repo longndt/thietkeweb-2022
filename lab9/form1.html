@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <style>
+      th {
+         width: 30%;
+         text-align: left;
+      }
+
+      td {
+         width: 70%;
+      }
+   </style>
+</head>
+
+<body>
+   <form>
+      <fieldset>
+         <legend>Student Details</legend>
+         <table>
+            <tr>
+               <th>
+                  <label>First name </label>
+               </th>
+               <td>
+                  <input type="text" required>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label>Last name </label>
+               </th>
+               <td>
+                  <input type="text" required minlength="3" maxlength="30">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Email</label>
+               </th>
+               <td>
+                  <input type="email" required placeholder="Nhập email sinh viên">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Password</label>
+               </th>
+               <td>
+                  <input type="password" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Address</label>
+               </th>
+               <td>
+                  <textarea name="" id="" cols="21" rows="3" placeholder="Nhập địa chỉ nhà" required minlength="5"
+                     maxlength="200"></textarea>
+               </td>
+            </tr>
+            <tr>
+               <th>Phone</th>
+               <td>
+                  <input type="tel" name="" id="" required>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Student Year</label>
+               </th>
+               <td>
+                  <input type="number" name="" id="" min="1" max="4">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Birthday</label>
+               </th>
+               <td>
+                  <input type="date" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Gender</label>
+               </th>
+               <td>
+                  Male <input type="radio" name="gioitinh" id="">
+                  Female <input type="radio" name="gioitinh" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Department</label>
+               </th>
+               <td>
+                  <select name="" id="">
+                     <option value="">Select 1 value</option>
+                     <option value="">CNTT</option>
+                     <option value="">Cơ khí</option>
+                     <option value="">Điện tử viễn thông</option>
+                     <option value="">Đồ họa</option>
+                     <option value="">Quản trị kinh doanh</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Hobbies</label>
+               </th>
+               <td>
+                  <input type="checkbox" name="" id=""> Badminton <br>
+                  <input type="checkbox" name="" id=""> Football <br>
+                  <input type="checkbox" name="" id=""> Volleyball <br>
+                  <input type="checkbox" name="" id=""> Running
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Favourite Color</label>
+               </th>
+               <td>
+                  <input type="color" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Avatar</label>
+               </th>
+               <td>
+                  <input type="file" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Facebook</label>
+               </th>
+               <td>
+                  <input type="url" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <label for="">Skill</label>
+               </th>
+               <td>
+                  <input type="range" name="" id="">
+               </td>
+            </tr>
+            <tr>
+               <th colspan="2" style="text-align: center;">
+                  <input type="submit" value="OK">
+               </th>
+            </tr>
+         </table>
+      </fieldset>
+   </form>
+</body>
+
+</html>
