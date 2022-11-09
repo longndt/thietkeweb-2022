@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handling</title>
+	<meta charset="utf-8">
+	<style>
+		.control{
+			clear: both;
+		}
+		.control div{
+			float: left;
+		}
+		.Caption{
+			width: 150px;
+		}
+		[id$="Warning"]{
+			display: none;
+		}
+	</style>
+	<script>
+		function checknull(txt)
+		{
+			if(txt.value.length==0)
+				return true;
+			else
+				return false;
+		}
+		function display(txtname, message)
+		{
+			document.getElementById(txtname).innnerHTML=message;
+			document.getElementById(txtname).style="color:red; display:block;";
+		}
+		function hidden(txtname)
+		{
+			window.alert("adfa");
+			//document.getElementById(txtname).style="display:none;"
+		}
+		
+		function valid(f)
+		{
+			
+			if(checknull(f.fullname))
+			{
+				display("fnWarning", "Fullname not be null");
+				f.fullname.focus();
+				return;
+			}
+			if(checknull(f.yearbirth))
+			{
+				display("ybWarning", "Yearbirth not be null");
+				f.age.focus();
+				return;
+			}
+		}
+		function thu()
+		{
+			window.alert("fadkfja");
+		}
+	</script>
+</head>
+<body>
+	<form name="Account" action="abc.jsp">
+		<div class="control">
+			<div class="Caption">Fullname:</div>
+			<div><input name="fullname" type="text" oninput="thu();"></div>
+			<div id="fnWarning">Fullname not be null</div>
+		</div>
+		<div class="control">
+			<div class="Caption">Year birth:</div>
+			<div><input name="yearbirth" type="text"></div>
+			<div id="ybWarning">Yearbirth not be null</div>
+		</div>
+		<div class="control">
+			<div class="Caption">Email:</div>
+			<div><input type="text"></div>
+			<div id="emWarning">Yearbirth not be null</div>
+		</div class="control">
+		<div class="control">
+			<div><input type="button" value="Submit" onclick='valid(document.forms.Account);'></div>
+			<div><input type="button" value="Cancel"></div>
+		</div>
+	</form>
+</body>
+</html>

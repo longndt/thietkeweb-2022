@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation demo</title>
+	<style>
+		.slider-bar{
+			width: 680px;
+			margin: auto;
+			overflow: hidden;
+		}
+		.slider{
+			height: 320px;
+		}
+		.slider ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.slider li{
+			line-height: 0;
+		}
+		.imgone{
+			top: 0px;
+			animation:one 10s linear infinite;
+		}
+		.imgtwo{
+			top: -320px;
+			animation:two 10s linear infinite;
+		}	
+		.imgthree{
+			top:-640px;
+			animation:three 10s linear infinite;
+		}
+		.imgfour{
+			top: -960px;
+			animation: four 10s linear infinite;
+		}
+		.imgfive{
+			top: -1280px;
+			animation: five 10s linear infinite;
+		}
+		[class^="img"]{
+			position: relative;
+		}
+		@keyframes five{
+			0%{left: 0px; z-index: 1; opacity: 1}
+			16%{left: 0px; z-index: 1; opacity: 1}
+			20%{left: 680px; z-index: 1; opacity: 1}
+			21%{left: 680px; z-index: 0; opacity: 0}
+			24%{left: -680px; z-index: 0; opacity: 0}
+			95%{left: -680px; z-index: 0; opacity: 0}
+			96%{left: -680px;z-index: 1; opacity: 1}
+			100%{left: 0px; z-index: 1; opacity: 1}
+		}
+		@keyframes four{
+			0%{left: -680px; z-index: 0; opacity: 0}
+			15%{left: -680px; z-index: 0; opacity: 0}
+			16%{left: -680px; z-index: 1; opacity: 1}
+			20%{left: 0px; z-index: 1; opacity: 1}
+			36%{left: 0px; z-index: 1; opacity: 1}
+			40%{left: 680px; z-index: 1; opacity: 1}
+			41%{left: 680px; z-index: 0; opacity: 0}
+			44%{left:-680px; z-index: 0; opacity: 0}
+			100%{left: -680px; z-index: 0; opacity: 0}
+		}
+		@keyframes three{
+			0%{left: -680px; z-index: 0; opacity: 0}
+			35%{left: -680px; z-index: 0; opacity: 0}
+			36%{left: -680px; z-index: 1; opacity: 1}
+			40%{left: 0px; z-index: 1; opacity: 1}
+			56%{left: 0px; z-index: 1; opacity: 1}
+			60%{left: 680px; z-index: 1; opacity: 1}
+			61%{left: 680px; z-index: 0; opacity: 0}
+			64%{left:-680px; z-index: 0; opacity: 0}
+			100%{left: -680px; z-index: 0; opacity: 0}
+		}
+		@keyframes two{
+			0%{left: -680px; z-index: 0; opacity: 0}
+			55%{left: -680px; z-index: 0; opacity: 0}
+			56%{left: -680px; z-index: 1; opacity: 1}
+			60%{left: 0px; z-index: 1; opacity: 1}
+			76%{left: 0px; z-index: 1; opacity: 1}
+			80%{left: 680px; z-index: 1; opacity: 1}
+			81%{left: 680px; z-index: 0; opacity: 0}
+			84%{left:-680px; z-index: 0; opacity: 0}
+			100%{left: -680px; z-index: 0; opacity: 0}
+		}
+		@keyframes one{
+			0%{left: -680px; z-index: 0; opacity: 0}
+			75%{left: -680px; z-index: 0; opacity: 0}
+			76%{left: -680px; z-index: 1; opacity: 1}
+			80%{left: 0px; z-index: 1; opacity: 1}
+			96%{left: 0px; z-index: 1; opacity: 1}
+			100%{left: 680px; z-index: 1; opacity: 1}
+		}
+		.bar{
+			height: 5px;
+			width: 680px;
+			background-color: red;
+			z-index: 2;
+			position: relative;
+			top: -5px;
+			animation: scroll 10s linear infinite;
+		}
+		@keyframes scroll{
+			0%, 20%, 40%, 60%, 80%{width: 0%; opacity: 0;}
+			4%, 24%, 44%, 64%, 84%{width: 0%; opacity: 0.7;}
+			16%, 36%, 56%, 76%, 96%{width: 100%;opacity: 0.7;}
+			19%, 39%, 59%, 79%, 99%{width: 100%; opacity: 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="slider-bar">
+		<div class="slider">
+			<ul>
+				<li class="imgone"><img src="images/img_1.jpg" alt=""></li>
+				<li class="imgtwo"><img src="images/img_2.jpg" alt=""></li>
+				<li class="imgthree"><img src="images/img_3.jpg" alt=""></li>
+				<li class="imgfour"><img src="images/img_4.jpg" alt=""></li>
+				<li class="imgfive"><img src="images/img_5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="bar">
+			
+		</div>
+	</div>
+</body>
+</html>
