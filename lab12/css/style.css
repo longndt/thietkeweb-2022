@@ -1,0 +1,15 @@
+body {
+   background-color: aqua;
+}
+
+li {
+   display: inline-block;
+}
+
+nav {
+   background-color: chocolate;
+}
+
+li:hover {
+   background-color: aliceblue;
+}
